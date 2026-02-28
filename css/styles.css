@@ -93,8 +93,12 @@ header{
     height: 36px;
     padding: 10px;
     cursor: pointer;
-    border-radius: 45%;
+    border-radius: 50%;
     transition: background-color 0.3s ease;
+}
+
+.cart-glass-container-item img{
+    width: 100%;
 }
 
 .cart-glass-container-item:hover{
