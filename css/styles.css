@@ -148,6 +148,9 @@ main{
     width: 1280px;
     height: 76px;
     justify-content: space-between;
+    gap: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .headling-1{
