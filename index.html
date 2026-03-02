@@ -4,44 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="header">
-        <div class="header__container">
-            <a href="/" id="header__logo">PawsStore</a>
-            <div class="header__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header>
+        <div class="container">
+            <div class="home-link">
+                <div class="paw-container">
+                    <a href="index.html"> 
+                    <img src="assets/images/лапка.png" alt="img error" class="paw-container-image">
+                    </a>
+                </div>
+                <a href="index.html" class = "paw-container-text">PawsStore</a>
             </div>
-            <ul class="header__menu">
-                <li class="header__item">
-                    <a href="/" class="navbar__links">Shop</a>
-                </li>
-                <li class="header__item">
-                    <a href="/" class="navbar__links">Categories</a>
-                </li>
-                <li class="header__item">
-                    <a href="/" class="navbar__links">Deals</a>
-                </li>
-                </li>
-                <li class="header__item">
-                    <a href="/" class="navbar__links">About</a>
-                </li>
-                <li class="header__button">
-                    <a href="/" class="navbar__links">
-                        <img src="assets\images\лупа.png" alt="img error">
-                    </a>
-                </li>
-                <li class="header__button">
-                    <a href="cart.html" class="navbar__links">
-                        <img src="assets\images\корзина.png" alt="img error">
-                    </a>
-                </li>
-                
-            </ul>
+            <div class="navigation-bar">
+                <a href="/" class="navigation-bar-item"> Shop </a>
+                <a href="/" class="navigation-bar-item"> Categories </a>
+                <a href="/" class="navigation-bar-item"> Deals </a>
+                <a href="/" class="navigation-bar-item"> About </a>
+            </div>
+            <div class="cart-glass-container">
+                <a href="/" class="cart-glass-container-item">
+                <img src="assets\images\лупа.png" alt="img error" id="glass-id">
+                </a>
+                <a href="cart.html" class="cart-glass-container-item">
+                <img src="assets\images\корзина.png" alt="img error">
+                </a>
+            </div>    
         </div>
-    </nav>
+    </header>
 </body>
 </html>
