@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/*-------------------css для header---------------------*/
 
 header{
     background-color: #FFFFFF;
@@ -116,6 +117,10 @@ header{
     cursor: default;
 }
 
+/*-------------------css для header---------------------*/
+
+/*-------------------css для main---------------------*/
+
 main{
     display: flex;
     flex: 1;
@@ -169,6 +174,10 @@ main{
     height: 28px;
     font-size: 18px;
 }
+
+/*-------------------css для main---------------------*/
+
+/*-------------------css для footer---------------------*/
 
 footer{
     background-color: #101828;
@@ -336,3 +345,5 @@ footer{
 .footer-icon:hover{
     filter: invert(50%) sepia(1) saturate(1000%) hue-rotate(3deg) brightness(1.1);
 }
+
+/*-------------------css для footer---------------------*/
