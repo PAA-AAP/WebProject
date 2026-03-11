@@ -36,6 +36,7 @@
         </div>
     </header>
     <main>
+
         <div class="main-container">
             <div class="description">
                 <div class="discription-container">
@@ -49,7 +50,64 @@
             </div>
             <div class="catalog-area">
                 <div class="filter-movement-area">
-                    
+                    <div class="filter-container">
+
+                        <p class="filter-headling"> Filters </p>
+                        <div class="filter-category-container">
+                            <div class="rating-container">
+                                <p class="filter-headling"> Rating </p>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="star-checkbox" id="5-star">
+                                    <label for="5-star"> 5+ Stars </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="star-checkbox" id="4-star">
+                                    <label for="4-star"> 4+ Stars </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="star-checkbox" id="3-star">
+                                    <label for="3-star"> 3+ Stars </label>
+                                </div>
+                            </div>
+                            <div class="price-range-container">
+                                <p class="filter-headling"> Price Range </p>
+                                <div class="prices-container">
+                                    <div class="min-max-container">
+                                        <p>Min</p>
+                                        <div class="price-select">
+                                            <p id="dollar-sign">$</p>
+                                            <input type="number" class="input-price" tabindex="0">
+                                        </div>
+                                    </div>
+                                    <p id="dash">-</p>
+                                    <div class="min-max-container">
+                                        <p>Max</p>
+                                        <div class="price-select">
+                                            <p id="dollar-sign">$</p>
+                                            <input type="number" class="input-price" tabindex="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="sort-container">
+                        <div class="product-number-container">
+                            <p>6 products</p> 
+                            <!-- Тут скорее всего количество будет js-ом определяться -->
+                        </div>
+                        <div class="sort-by-container">
+                            <div class="sort-by-label">
+                                Sort by:
+                            </div>
+                            <div class="select-button">
+                                <p id="dropbox-text">Name (A-Z)</p>
+                                <img src="assets/images/select_arrow.png" alt="стрелочка вниз" id="select-arrow">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
