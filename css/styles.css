@@ -352,7 +352,7 @@ main{
     border: 1px solid #D1D5DC;
 }
 
-.price-select:focus{
+.price-select:hover{
     border-color: orange;
     outline: none;
 }
