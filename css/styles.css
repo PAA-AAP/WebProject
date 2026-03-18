@@ -494,6 +494,10 @@ selectedcontent {
 }
 
 .product-link{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     border-radius: 14px;
     border-width: 1px;
@@ -501,6 +505,91 @@ selectedcontent {
     background-color: rgb(219, 217, 217);
     background-size: cover;
     border: 1px solid #E5E7EB;
+    transition: border 0.3s ease;
+}
+
+.product-link:hover .popup-panel{
+    opacity: 1;
+    transform: translateX(0) translateY(-80%);
+}
+
+.popup-panel{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 30%;
+    opacity: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 7px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.popup-name-rating{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    width: 100%;
+    height: 55%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price-cart-container{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+#popup-price{
+    font-size: 18px;
+    color: #FF6900;
+    font-weight: bold;
+}
+
+#popup-price::before{
+    content: '$'; 
+}
+
+#popup-cart{
+    object-fit: contain;
+}
+
+#cart-button{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #FF6900;
+    border: none;
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+#cart-button:hover{
+    background-color: #f66600;
+    transform: scale(1.1);
+}
+
+#cart-button img{
+    width: 60%;
+    filter: invert(100%);
+    transition: 0.3s ease;
+}
+
+
+.product-link:hover{
+    border: 1px solid orange;
+}
+
+.product-link:hover .price-tag{
+    opacity: 0;
 }
 
 .price-tag{
@@ -515,9 +604,9 @@ selectedcontent {
     background-color: #FF6900;
     box-shadow: 0px 4px 6px -4px #0000001A;
     box-shadow: 0px 10px 15px -3px #0000001A;
-    text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: opacity .3s ease;
 }
 
 .product-info{
@@ -534,9 +623,9 @@ selectedcontent {
     background-color: white;
     padding: 16px;
     border: 1px solid #E5E7EB;
-    text-decoration: none;
     color: black;
     font-weight: bold;
+    z-index: 999;
 }
 
 .product-name{
