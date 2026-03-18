@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -19,14 +20,14 @@
             </div>
 
             <div class="navigation-bar">
-                <a href="/" class="navigation-bar-item"> Shop </a>
-                <a href="/" class="navigation-bar-item"> Categories </a>
-                <a href="/" class="navigation-bar-item"> Deals </a>
-                <a href="/" class="navigation-bar-item"> About </a>
+                <a href="" class="navigation-bar-item"> Shop </a>
+                <a href="" class="navigation-bar-item"> Categories </a>
+                <a href="" class="navigation-bar-item"> Deals </a>
+                <a href="" class="navigation-bar-item"> About </a>
             </div>
 
             <div class="cart-glass-container">
-                <a href="/" class="cart-glass-container-item">
+                <a href="" class="cart-glass-container-item">
                 <img src="assets\images\лупа.png" alt="иконка лупы" id="glass-id">
                 </a>
                 <a href="cart.html" class="cart-glass-container-item">
@@ -74,7 +75,7 @@
                                 <div class="prices-container">
                                     <div class="min-max-container">
                                         <p>Min</p>
-                                        <div class="price-select">
+                                        <div class="price-select" tabindex="0" id="test">
                                             <p id="dollar-sign">$</p>
                                             <input type="number" class="input-price" tabindex="0">
                                         </div>
@@ -82,7 +83,7 @@
                                     <p id="dash">-</p>
                                     <div class="min-max-container">
                                         <p>Max</p>
-                                        <div class="price-select">
+                                        <div class="price-select" tabindex="0">
                                             <p id="dollar-sign">$</p>
                                             <input type="number" class="input-price" tabindex="0">
                                         </div>
@@ -102,11 +103,58 @@
                             <div class="sort-by-label">
                                 Sort by:
                             </div>
-                            <div class="select-button">
-                                <p id="dropbox-text">Name (A-Z)</p>
-                                <img src="assets/images/select_arrow.png" alt="стрелочка вниз" id="select-arrow">
-                            </div>
+                            <select id="sort-select">
+                                <button><selectedcontent></selectedcontent></button>
+                                <option value="Name (A-Z)">Name (A-Z)</option>
+                                <option value="Name (Z-A)">Name (Z-A)</option>
+                                <option value="Price (Low to High)">Price (Low to High)</option>
+                                <option value="Price (Low to High)">Price (High to Low)</option>
+                            </select>
                         </div>
+                    </div>
+                    <div class="product-link-panel">
+                        <a href="product.html" class="product-link"> 
+                            <div class="price-tag"> Цена товара </div>
+                            <div class="product-info">
+                                <p class="product-name"> Название продукта </p>
+                                <div class="product-panel-rating-container"> оценка товара </div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-link"> 
+                            <div class="price-tag"> Цена товара </div>
+                            <div class="product-info">
+                                <p class="product-name"> Название продукта </p>
+                                <div class="product-panel-rating-container"> оценка товара </div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-link"> 
+                            <div class="price-tag"> Цена товара </div>
+                            <div class="product-info">
+                                <p class="product-name"> Название продукта </p>
+                                <div class="product-panel-rating-container"> оценка товара </div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-link"> 
+                            <div class="price-tag"> Цена товара </div>
+                            <div class="product-info">
+                                <p class="product-name"> Название продукта </p>
+                                <div class="product-panel-rating-container"> оценка товара </div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-link"> 
+                            <div class="price-tag"> Цена товара </div>
+                            <div class="product-info">
+                                <p class="product-name"> Название продукта </p>
+                                <div class="product-panel-rating-container"> оценка товара </div>
+                            </div>
+                        </a>
+                        <a href="product.html" class="product-link"> 
+                            <div class="price-tag"> Цена товара </div>
+                            <div class="product-info">
+                                <p class="product-name"> Название продукта </p>
+                                <div class="product-panel-rating-container"> оценка товара </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -126,10 +174,10 @@
 
                 <div class="footer-upper-container">
                     <p class = "footer-headling"> Quick Links </p>
-                    <a href="/" class="footer-upper-link"> Shop All </a>
-                    <a href="/" class="footer-upper-link"> New Arrivals </a>
-                    <a href="/" class="footer-upper-link"> Best Sellers </a>
-                    <a href="/" class="footer-upper-link"> Sale Items </a>
+                    <a href="" class="footer-upper-link"> Shop All </a>
+                    <a href="" class="footer-upper-link"> New Arrivals </a>
+                    <a href="" class="footer-upper-link"> Best Sellers </a>
+                    <a href="" class="footer-upper-link"> Sale Items </a>
                 </div> 
                 <div class="footer-upper-container">
                     <p class = "footer-headling"> Customer Service </p>
