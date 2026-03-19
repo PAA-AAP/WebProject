@@ -502,15 +502,41 @@ selectedcontent {
     border-radius: 14px;
     border-width: 1px;
     padding: 1px;
-    background-color: rgb(219, 217, 217);
+    background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid #E5E7EB;
-    transition: border 0.3s ease;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.product-link::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(/assets/images/cat.jpg) center no-repeat;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-link:hover::before{
+    transform: scale(1.1);
 }
 
 .product-link:hover .popup-panel{
     opacity: 1;
     transform: translateX(0) translateY(-80%);
+}
+
+
+.product-link:hover{
+    border: 1px solid orange;
+    cursor: pointer;
+    background-size: 125% 125%;
+}
+
+.product-link:hover .price-tag{
+    opacity: 0;
 }
 
 .popup-panel{
@@ -581,15 +607,6 @@ selectedcontent {
     width: 60%;
     filter: invert(100%);
     transition: 0.3s ease;
-}
-
-
-.product-link:hover{
-    border: 1px solid orange;
-}
-
-.product-link:hover .price-tag{
-    opacity: 0;
 }
 
 .price-tag{
