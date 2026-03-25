@@ -6,7 +6,11 @@ for (let product of products) {
   });
 }
 
-document.getElementById('cart-button').addEventListener('click', function(event){
+const carts = document.getElementsByClassName('cart-button');
+
+for (let cart of carts) {
+  cart.addEventListener('click', (event) => {
     event.stopPropagation();
     event.preventDefault();
-});
+  });
+}
